@@ -16,80 +16,82 @@
 </head>
 
 <body>
-    <!--Cabeçalho e adição de tarefas-->
-    <div class="cabecalho">
-        <header>
-            <h1>To do List</h1>
-        </header>
-        <form id="todo-form">
-            <p>Adicione sua tarefa</p>
-            <div class="form-control">
-                <input type="text" class="btn-form" id="todo-input" placeholder="O que vai fazer?">
-                <button type="submit">
-                    <i class="fa-thin fa-plus"></i>
-                </button>
-            </div>
-        </form>
-        <!--Edição de tarefas-->
-        <form id="edit-form">
-            <p>Edite a sua tarefa:</p>
-            <div class="form-control">
-                <input type="text" id="edit-submit">
-                <button type="submit">
-                    <i class="fa-solid fa-check-double"></i>
-                </button>
-            </div>
-            <button id="cancel-edit-btn">Cancelar</button>
-        </form>
-        <!--Buscar-->
-        <div id="toolbar">
-            <div id="search">
-                <h4>Pesquisar:</h4>
-                <form>
-                    <input type="text" id="search-input" placeholder="Buscar">
-                    <button id="erase-button">
-                        <i class="fa solid fa-delete-left"></i>
+    
+        <!--Cabeçalho e adição de tarefas-->
+        <div class="todo-container">
+            <header class="">
+                <h1>Lista de tarefas</h1>
+            </header>
+            <form id="todo-form">
+                <p>Adicione sua tarefa</p>
+                <div class="form-control">
+                    <input type="text" class="btn-form" id="todo-input" placeholder="O que vai fazer?">
+                    <button type="submit">
+                        <i class="fa-thin fa-plus"></i>
                     </button>
-                </form>
+                </div>
+            </form>
+            <!--Edição de tarefas-->
+            <form id="edit-form" class="">
+                <p>Edite a sua tarefa:</p>
+                <div class="form-control">
+                    <input type="text" id="edit-submit">
+                    <button type="submit">
+                        <i class="fa-solid fa-check-double"></i>
+                    </button>
+                </div>
+                <button id="cancel-edit-btn">Cancelar</button>
+            </form>
+            <!--Buscar-->
+            <div id="toolbar">
+                <div id="search">
+                    <h4>Pesquisar:</h4>
+                    <form>
+                        <input type="text" id="search-input" placeholder="Buscar">
+                        <button id="erase-button">
+                            <i class="fa solid fa-delete-left"></i>
+                        </button>
+                    </form>
+                </div>
+            <!--filtrar-->
+                <div id="filter">
+                    <h4>Filtrar:</h4>
+                    <select id="filter-select">
+                        <option value="all">Todos</option>
+                        <option value="done">Feitos</option>
+                        <option value="todo">A fazer</option>
+                    </select>
+                </div>
             </div>
-        <!--filtrar-->
-            <div id="filter">
-                <h4>Filtrar:</h4>
-                <select id="filter-select">
-                    <option value="all">Todos</option>
-                    <option value="done">Feitos</option>
-                    <option value="todo">A fazer</option>
-                </select>
+            <!--Comentário-->
+            <div id="todo-list">
+                <div class="todo">
+                    <h3>Estou fazendo alguma coisa...</h3>
+                    <button class="finish-todo">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="edit-todo">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="remove-todo">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="todo"></div>
+                    <h3>Estudar </h3>
+                    <button class="finish-todo">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="edit-todo">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="remove-todo">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
             </div>
         </div>
-        <!--Comentário-->
-        <div id="todo-list">
-            <div class="todo">
-                <h3>Estou fazendo alguma coisa...</h3>
-                <button class="finish-todo">
-                    <i class="fa-solid fa-check"></i>
-                </button>
-                <button class="edit-todo">
-                    <i class="fa-solid fa-pen"></i>
-                </button>
-                <button class="remove-todo">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="todo"></div>
-                <h3>Estudar </h3>
-                <button class="finish-todo">
-                    <i class="fa-solid fa-check"></i>
-                </button>
-                <button class="edit-todo">
-                    <i class="fa-solid fa-pen"></i>
-                </button>
-                <button class="remove-todo">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-        </div>
-    </div>
+    
 </body>
 
 </html>
