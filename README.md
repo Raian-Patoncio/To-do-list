@@ -3,6 +3,7 @@
 Este projeto visa criar um site que possua um auto armazenamento para salvar as tarefas que o cliente deseja realizar futuramente
 ele conta com botões e opções de salvamento e edição de texto, submits e dentres outros meios para armazenar os requests necessários
 pretendo estilizar os botões e a página ao máximo para tornar fácil a navegação e fazer o uso de meus conhecimentos de CSS adquiridos.
+Além disso pretendo fazer o uso de adições como o metódo de alterar o tema para escuro e personalização do site para o gosto do usuário, como cores dos botões, background e etc.
 
 ## Instalação
 
